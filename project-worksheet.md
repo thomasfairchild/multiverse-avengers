@@ -43,10 +43,10 @@ https://superheroapi.com/index.html
 
 
 Wireframe:
-- [https://i.imgur.com/rF5Rj8E.jpg]()
+https://i.imgur.com/rF5Rj8E.jpg
 
 React Architecture:
-- [https://i.imgur.com/PIQhfX7.jpg]()
+https://i.imgur.com/PIQhfX7.jpg
 
 
 ### MVP/PostMVP
