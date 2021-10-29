@@ -78,20 +78,20 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 4hrs |  |
-| Working with API | H | 4hrs |  |
-| App | H | 3hrs |  |
-| Header | H | 1hr |  |
-| CSS | H | 3hrs |  |
-| Search | H | 1hr |  |
-| Team | H | 2hrs |  | 
-| Roster | H | 2hrs |  |
-| Mission | H | 1hr |  |
-| MissionData | H | 1hr |  |
-| Face-Off | H | 1hr |  |
-| FaceoffData | H | 1hr |  |
-| After Effects/Photoshop | H | 1hr |  |
-| Total | H | 25 hrs|  |
+- | Adding Form | H | 4hrs |  |
+- | Working with API | H | 4hrs |  |
+- | App | H | 3hrs |  |
+- | Header | H | 1hr |  |
+- | CSS | H | 3hrs |  |
+- | Search | H | 1hr |  |
+- | Team | H | 2hrs |  | 
+- | Roster | H | 2hrs |  |
+- | Mission | H | 1hr |  |
+- | MissionData | H | 1hr |  |
+- | Face-Off | H | 1hr |  |
+- | FaceoffData | H | 1hr |  |
+- | After Effects/Photoshop | H | 1hr |  |
+- | Total | H | 25 hrs|  |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and their role in the project such as Axios, ReactStrap, D3, etc. 
