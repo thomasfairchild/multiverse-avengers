@@ -1,6 +1,23 @@
 # Project Overview
 
-Work in progress.
+October 29th: Project was approved.
+
+October 30th: 
+- Went over class study guides and watched recorded sessions.
+- Launched npx create-react-app, react-router, react-router-dom.
+- Created the MPV Components (App, SearchPage, SearchBar, SearchResults, HeroList).
+- Started writing code.
+
+October 31st:
+- Spent most of the day writing code.
+- API setup was a success.
+- First major problem: Unable to get an object array to show on page.
+
+November 1st:
+- Spent the entire day brainstorming how to solve the aforementioned problem.
+- Problem hasn't been solved but progress was made.
+- The API data is still successfully being transmitted; the data is there to access.
+
 
 ## Project Links
 
