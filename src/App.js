@@ -1,6 +1,9 @@
 import './App.css';
 import SearchPage from './SearchPage';
 import React, { useState, useEffect } from 'react';
+import SearchResults from './SearchResults';
+import HeroList from './HeroList';
+
 
 function App(props) {
 
@@ -15,8 +18,9 @@ function App(props) {
     .then(response => response.json())
     .then(data => {
         setHeroList(data)
-        setHeroListDefault(data)
-        console.log("Superman!",data)
+        setHeroListDefault(data.results)
+        setSuperheroData(data)
+        console.log("Finding Hero",data.results)
     })
 }
 
@@ -40,12 +44,18 @@ function handleChange (e) {
         }
     }
 
-useEffect( () => {findHero()},[props.data]);
+useEffect( () => {findHero()},[]);
+
+
 
   return (
     <div className="App">
       <h1>Multiverse Avengers: ASSEMBLE!</h1>
-      <SearchPage searchText={searchText} handleChange={handleChange}/>
+      <SearchPage searchText={searchText} updateInput={updateInput} handleChange={handleChange}/>
+        <h2>The Heroes</h2>
+      <SearchResults heroList={heroList} />
+      {/* <HeroList heroList={heroList} /> */}
+      <h2>My Team</h2>
     </div>
   );
 }

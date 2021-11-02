@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import SearchBar from './SearchBar';
 
 const SearchPage = (props) => {
@@ -15,7 +14,6 @@ return (
     onChange={updateInput}
     // onClick={heroDetailHtml}
     />
-    {/* <HeroList findHero={heroList}/> */}
     </>
 )
 }
