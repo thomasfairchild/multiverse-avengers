@@ -7,7 +7,7 @@ import HeroList from './HeroList';
 
 function App(props) {
 
-  const [heroList, setHeroList] = useState('');
+  const [heroList, setHeroList] = useState([]);
   const [input, setInput] = useState('');
   const [heroListDefault, setHeroListDefault] = useState();
   const [searchText, setSearchText] = useState('');
@@ -17,7 +17,7 @@ function App(props) {
     return await fetch(`https://www.superheroapi.com/api.php/10158049149961360/search/${searchText}`)
     .then(response => response.json())
     .then(data => {
-        setHeroList(data)
+        setHeroList(data.results)
         setHeroListDefault(data.results)
         setSuperheroData(data)
         console.log("Finding Hero",data.results)
@@ -44,18 +44,17 @@ function handleChange (e) {
         }
     }
 
-useEffect( () => {findHero()},[]);
+// useEffect( () => {findHero()},[]);
 
 
-
+console.log(heroList)
   return (
     <div className="App">
       <h1>Multiverse Avengers: ASSEMBLE!</h1>
       <SearchPage searchText={searchText} updateInput={updateInput} handleChange={handleChange}/>
         <h2>The Heroes</h2>
-      <SearchResults heroList={heroList} />
-      {/* <HeroList heroList={heroList} /> */}
-      <h2>My Team</h2>
+      {/* <SearchResults heroList={heroList} /> */}
+      <HeroList heroList={heroList} />
     </div>
   );
 }
