@@ -1,8 +1,10 @@
 import './App.css';
 import SearchPage from './SearchPage';
-import React, { useState, useEffect } from 'react';
-import SearchResults from './SearchResults';
+import React, { useState } from 'react';
 import HeroList from './HeroList';
+import MyTeam from './MyTeam';
+import { Link, Route } from "react-router-dom";
+import Header from './Header'
 
 
 function App(props) {
@@ -12,6 +14,7 @@ function App(props) {
   const [heroListDefault, setHeroListDefault] = useState();
   const [searchText, setSearchText] = useState('');
   const [superheroData, setSuperheroData] = useState([]);
+  const [teamList, setTeamList] = useState([]);
 
   const findHero = async () => {
     return await fetch(`https://www.superheroapi.com/api.php/10158049149961360/search/${searchText}`)
@@ -44,17 +47,43 @@ function handleChange (e) {
         }
     }
 
+    const addHeroToTeam = (heroTeam) => {
+      console.log("POWER LEVEL",heroTeam);
+      if(teamList.length === 5){
+  
+      }
+  
+      setTeamList([...teamList, heroList])
+    }
+
 // useEffect( () => {findHero()},[]);
 
 
 console.log(heroList)
   return (
     <div className="App">
-      <h1>Multiverse Avengers: ASSEMBLE!</h1>
+      <h1>Multiverse Avengers</h1>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="./MyTeam.js">My Team</Link>
+      </nav>
+      <br>
+      </br>
+      <Route exact path="/">
       <SearchPage searchText={searchText} updateInput={updateInput} handleChange={handleChange}/>
-        <h2>The Heroes</h2>
-      {/* <SearchResults heroList={heroList} /> */}
-      <HeroList heroList={heroList} />
+      <br>
+      </br>
+        <h1>The Roster</h1>
+        <p>Search for your warrior and they will appear below.</p>
+        <br>
+        </br>
+        <HeroList heroList={heroList} />
+       </Route> 
+
+      <Route exact path="./MyTeam.js">
+      {/* <MyTeam team={teamList}/> */}
+      <MyTeam />
+      </Route>
     </div>
   );
 }

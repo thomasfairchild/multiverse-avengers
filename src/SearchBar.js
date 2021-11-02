@@ -15,7 +15,7 @@ import React from 'react';
             id="search-bar"
             type="search"
             value={searchText}
-            placeholder="Search for your hero (e.g., Superman, Goku, etc...)"
+            placeholder="Search for your character (e.g., Superman, Goku, etc...)"
             onChange={handleChange}
             />
          </div>   

@@ -18,6 +18,10 @@ November 1st:
 - Problem hasn't been solved but progress was made.
 - The API data is still successfully being transmitted; the data is there to access.
 
+November 2nd:
+- Problem has been solved!
+
+
 
 ## Project Links
 

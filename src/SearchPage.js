@@ -12,7 +12,6 @@ return (
     searchText={searchText}
     handleChange={handleChange}
     onChange={updateInput}
-    // onClick={heroDetailHtml}
     />
     </>
 )
