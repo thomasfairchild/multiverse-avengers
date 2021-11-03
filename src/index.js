@@ -1,14 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App.js";
-import { BrowserRouter as Router } from 'react-router-dom';
+import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import reportWebVitals from './reportWebVitals';
 
 // anytime a component wraps around another component...its called
 // as Higher Order Component
 
 ReactDOM.render(
-    <Router>
+  <React.StrictMode>
+    <BrowserRouter>
       <App />
-    </Router>, 
-  
-document.getElementById("root"));
+    </BrowserRouter>
+    </React.StrictMode>,
+  document.getElementById("root")
+);
+
+reportWebVitals();

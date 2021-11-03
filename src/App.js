@@ -5,9 +5,10 @@ import HeroList from './HeroList';
 import MyTeam from './MyTeam';
 import { Link, Route } from "react-router-dom";
 import Header from './Header'
+import Mission from './Mission';
 
 
-function App(props) {
+function App() {
 
   const [heroList, setHeroList] = useState([]);
   const [input, setInput] = useState('');
@@ -56,17 +57,22 @@ function handleChange (e) {
       setTeamList([...teamList, heroList])
     }
 
-// useEffect( () => {findHero()},[]);
-
 
 console.log(heroList)
   return (
     <div className="App">
       <h1>Multiverse Avengers</h1>
-      <nav>
+      <ul>
+        <li>
         <Link to="/">Home</Link>
+        </li>
+        <li>
         <Link to="./MyTeam.js">My Team</Link>
-      </nav>
+        </li>
+        <li>
+        <Link to="./Mission.js"> Mission</Link>
+        </li>
+      </ul>
       <br>
       </br>
       <Route exact path="/">
@@ -81,8 +87,12 @@ console.log(heroList)
        </Route> 
 
       <Route exact path="./MyTeam.js">
-      {/* <MyTeam team={teamList}/> */}
+      <MyTeam team={teamList}/>
       <MyTeam />
+      </Route>
+
+      <Route exact path="./Mission.js">
+        <Mission/>
       </Route>
     </div>
   );
