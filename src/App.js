@@ -48,8 +48,8 @@ function handleChange (e) {
         }
     }
 
-    const addHeroToTeam = (heroTeam) => {
-      console.log(heroTeam,addHeroToTeam);
+    const addHeroToTeam = (teamList) => {
+      console.log('addHeroToTeam is ',addHeroToTeam);
       if(teamList.length === 5){
   
       }

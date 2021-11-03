@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import MyTeam from './MyTeam';
 
-const HeroList = ({heroList}) => {
-  console.log(heroList)
+const HeroList = ({heroList, addHeroToTeam}) => {
+  console.log(heroList, addHeroToTeam)
   
   const [teamList, setTeamList] = useState([]);
+  console.log(teamList, setTeamList)
 
   return (
     <>
