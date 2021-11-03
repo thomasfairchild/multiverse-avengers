@@ -1,30 +1,20 @@
 import React, { useState } from 'react';
 import MyTeam from './MyTeam';
 
-const HeroList = ({heroList, addHeroToTeam}) => {
-  console.log(heroList, addHeroToTeam)
+
+const HeroList = (props) => {
+  console.log(props.addHeroToTeam)
+  console.log(props.heroList)
   
   const [teamList, setTeamList] = useState([]);
   console.log(teamList, setTeamList)
 
   return (
     <>
-    {heroList ? heroList.map((data) => {
-      console.log(data)
+    {props.heroList ? props.heroList.map((data) => {
+      console.log(props.heroList)
       if (data) {
-      console.log(heroList)
 
-      // let myTeamHtml = "";
-      // if(props.team[0]){
-      //   myTeamHtml = props.team.map((heroList) => {
-      //   return <div>
-      //           <img src={heroList.image.url} alt="superhero pic" />
-      //           <h1>{heroList.name}</h1>
-      //           <button onClick={() => props.addHeroToTeam(myTeamHtml)}>Add to Team</button>
-      //       </div>
-      //   })}
-      
-      
 
     return (
           <div >
@@ -84,8 +74,7 @@ const HeroList = ({heroList, addHeroToTeam}) => {
           <br>
           </br>
           <div className="button">
-          {/* <div style={{display: 'flex'}}>{myTeamHtml}</div> */}
-          {/* <MyTeam /> */}
+            <button onClick={() => props.addHeroToTeam(data.id)}>Add to Team</button>
           <br>
           </br>
           <br>

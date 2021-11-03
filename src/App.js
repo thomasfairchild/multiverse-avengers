@@ -48,13 +48,19 @@ function handleChange (e) {
         }
     }
 
-    const addHeroToTeam = (teamList) => {
-      console.log('addHeroToTeam is ',addHeroToTeam);
+    const addHeroToTeam = (id) => {
+      const hero = heroList.find(ultra => ultra.id === id)
       if(teamList.length === 5){
   
       }
   
-      setTeamList([...teamList, heroList])
+      setTeamList([...teamList, hero])
+    }
+
+    const removeHeroFromTeam = (id) => {
+      const newTeamList = teamList.filter(ultra => ultra.id !== id)
+
+      setTeamList(newTeamList)
     }
 
 
@@ -63,9 +69,8 @@ console.log(heroList)
     <div className="App">
       <h1>Multiverse Avengers</h1>
       <div className="nav-bar">
-        <Link to="/">Home</Link>
-        <Link to="./MyTeam.js">My Team</Link>
-        <Link to="./Mission.js"> Mission</Link>
+        <Link to="/">HOME</Link>
+        <Link to="./MyTeam.js">MY TEAM</Link>
       </div>
       <br>
       </br>
@@ -73,19 +78,15 @@ console.log(heroList)
       <SearchPage searchText={searchText} updateInput={updateInput} handleChange={handleChange}/>
       <br>
       </br>
-        <h1>The Roster</h1>
-        <p>Call forth your warrior and they will appear below, ready for battle!</p>
+        <h3>Call forth your warrior and they will appear, ready for battle!</h3>
         <br>
         </br>
         <HeroList heroList={heroList} addHeroToTeam={addHeroToTeam} />
        </Route> 
 
-      <MyTeam team={teamList}/>
-
-
-      {/* <Route exact path="./Mission.js"> */}
-        <Mission/>
-      {/* </Route> */}
+      <Route exact path="/MyTeam.js" component={MyTeam}>
+      <MyTeam team={teamList} removeHeroFromTeam={removeHeroFromTeam}/>
+      </Route>
     </div>
   );
 }

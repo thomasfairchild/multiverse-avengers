@@ -20,7 +20,11 @@ November 1st:
 
 November 2nd:
 - Problem has been solved!
+- Characters as they appear (picture, name, info) show up on the page as intended.
 
+November 3rd:
+- The onClick function isn't working. Today's goal is to solve it in order to
+be able to select characters and add them to your team.
 
 
 ## Project Links

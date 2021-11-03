@@ -2,21 +2,28 @@ import React from 'react';
 
 function MyTeam(props) {
 
-let myTeamHtml = '';
-if(props.team[0]){
-    myTeamHtml = props.team.map((heroList) => {
-        return <div>
-                <img src={heroList.image.url} alt="superhero pic" />
-                <h1>{heroList.name}</h1>
-                <button onClick={() => heroList.addHeroToTeam(myTeamHtml)}>Add to Team</button>
+let myTeamHtml = props.team.map((hero) => {
+
+        return (
+        <div>
+                <img src={hero.image.url} alt="superhero pic" />
+                <h1>{hero.name}</h1>
+                <button onClick={() => props.removeHeroFromTeam(hero.id)}>Remove from Team</button>
             </div>
+)
     })
-}
+console.log(props.team)
+
     return (
         <div className="TheTeam">
-            <h1>My Team</h1>
+            <h1>MY TEAM</h1>
             <p>Assemble!</p>
-            {myTeamHtml}
+            <br>
+            </br>
+            {props.team.length > 0 ? myTeamHtml:null}
+            <br>
+            </br>
+            <h2>ACTIVATE MISSION</h2>
         </div>
     )
 }
