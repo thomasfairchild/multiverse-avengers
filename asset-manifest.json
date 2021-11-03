@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/thomasfairchild/multiverse-avengers/static/css/main.772f7033.chunk.css",
+    "main.js": "/thomasfairchild/multiverse-avengers/static/js/main.9c443830.chunk.js",
+    "main.js.map": "/thomasfairchild/multiverse-avengers/static/js/main.9c443830.chunk.js.map",
+    "runtime-main.js": "/thomasfairchild/multiverse-avengers/static/js/runtime-main.01d1baa1.js",
+    "runtime-main.js.map": "/thomasfairchild/multiverse-avengers/static/js/runtime-main.01d1baa1.js.map",
+    "static/js/2.9f27fe9e.chunk.js": "/thomasfairchild/multiverse-avengers/static/js/2.9f27fe9e.chunk.js",
+    "static/js/2.9f27fe9e.chunk.js.map": "/thomasfairchild/multiverse-avengers/static/js/2.9f27fe9e.chunk.js.map",
+    "static/js/3.d45fc58b.chunk.js": "/thomasfairchild/multiverse-avengers/static/js/3.d45fc58b.chunk.js",
+    "static/js/3.d45fc58b.chunk.js.map": "/thomasfairchild/multiverse-avengers/static/js/3.d45fc58b.chunk.js.map",
+    "index.html": "/thomasfairchild/multiverse-avengers/index.html",
+    "static/css/main.772f7033.chunk.css.map": "/thomasfairchild/multiverse-avengers/static/css/main.772f7033.chunk.css.map",
+    "static/js/2.9f27fe9e.chunk.js.LICENSE.txt": "/thomasfairchild/multiverse-avengers/static/js/2.9f27fe9e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01d1baa1.js",
+    "static/js/2.9f27fe9e.chunk.js",
+    "static/css/main.772f7033.chunk.css",
+    "static/js/main.9c443830.chunk.js"
+  ]
+}
