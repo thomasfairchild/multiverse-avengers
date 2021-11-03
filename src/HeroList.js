@@ -1,19 +1,31 @@
 import React, { useState } from 'react';
+import MyTeam from './MyTeam';
 
 const HeroList = ({heroList}) => {
   console.log(heroList)
   
   const [teamList, setTeamList] = useState([]);
 
-
-  // const [heroList, setHeroList] = useState(props);
   return (
     <>
     {heroList ? heroList.map((data) => {
       console.log(data)
       if (data) {
-      console.log(heroList)  
-        return (
+      console.log(heroList)
+
+      // let myTeamHtml = "";
+      // if(props.team[0]){
+      //   myTeamHtml = props.team.map((heroList) => {
+      //   return <div>
+      //           <img src={heroList.image.url} alt="superhero pic" />
+      //           <h1>{heroList.name}</h1>
+      //           <button onClick={() => props.addHeroToTeam(myTeamHtml)}>Add to Team</button>
+      //       </div>
+      //   })}
+      
+      
+
+    return (
           <div >
             <br>
             </br>
@@ -71,16 +83,18 @@ const HeroList = ({heroList}) => {
           <br>
           </br>
           <div className="button">
-          <button onClick={() => teamList.addHeroToTeam(heroList)}>Add to Team</button>
+          {/* <div style={{display: 'flex'}}>{myTeamHtml}</div> */}
+          {/* <MyTeam /> */}
           <br>
           </br>
           <br>
           </br>
           </div>
           </div>
-        )
+        
+    )
       }
-  }): <div>Sorry, it appears that character is missing in action!</div>}
+    }): <div>Sorry, it appears that character is missing in action!</div>}
   </>
   )
 }

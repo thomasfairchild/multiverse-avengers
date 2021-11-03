@@ -49,7 +49,7 @@ function handleChange (e) {
     }
 
     const addHeroToTeam = (heroTeam) => {
-      console.log("POWER LEVEL",heroTeam);
+      console.log(heroTeam,addHeroToTeam);
       if(teamList.length === 5){
   
       }
@@ -62,17 +62,11 @@ console.log(heroList)
   return (
     <div className="App">
       <h1>Multiverse Avengers</h1>
-      <ul>
-        <li>
+      <div className="nav-bar">
         <Link to="/">Home</Link>
-        </li>
-        <li>
         <Link to="./MyTeam.js">My Team</Link>
-        </li>
-        <li>
         <Link to="./Mission.js"> Mission</Link>
-        </li>
-      </ul>
+      </div>
       <br>
       </br>
       <Route exact path="/">
@@ -80,20 +74,18 @@ console.log(heroList)
       <br>
       </br>
         <h1>The Roster</h1>
-        <p>Search for your warrior and they will appear below.</p>
+        <p>Call forth your warrior and they will appear below, ready for battle!</p>
         <br>
         </br>
-        <HeroList heroList={heroList} />
+        <HeroList heroList={heroList} addHeroToTeam={addHeroToTeam} />
        </Route> 
 
-      <Route exact path="./MyTeam.js">
       <MyTeam team={teamList}/>
-      <MyTeam />
-      </Route>
 
-      <Route exact path="./Mission.js">
+
+      {/* <Route exact path="./Mission.js"> */}
         <Mission/>
-      </Route>
+      {/* </Route> */}
     </div>
   );
 }
