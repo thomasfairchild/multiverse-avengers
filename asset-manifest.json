@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/multiverse-avengers/static/css/main.2b042cd8.chunk.css",
-    "main.js": "/multiverse-avengers/static/js/main.6abdf7f3.chunk.js",
-    "main.js.map": "/multiverse-avengers/static/js/main.6abdf7f3.chunk.js.map",
+    "main.css": "/multiverse-avengers/static/css/main.a655fe8e.chunk.css",
+    "main.js": "/multiverse-avengers/static/js/main.65301469.chunk.js",
+    "main.js.map": "/multiverse-avengers/static/js/main.65301469.chunk.js.map",
     "runtime-main.js": "/multiverse-avengers/static/js/runtime-main.3dba8b20.js",
     "runtime-main.js.map": "/multiverse-avengers/static/js/runtime-main.3dba8b20.js.map",
-    "static/js/2.765e2114.chunk.js": "/multiverse-avengers/static/js/2.765e2114.chunk.js",
-    "static/js/2.765e2114.chunk.js.map": "/multiverse-avengers/static/js/2.765e2114.chunk.js.map",
+    "static/js/2.682c965e.chunk.js": "/multiverse-avengers/static/js/2.682c965e.chunk.js",
+    "static/js/2.682c965e.chunk.js.map": "/multiverse-avengers/static/js/2.682c965e.chunk.js.map",
     "static/js/3.d45fc58b.chunk.js": "/multiverse-avengers/static/js/3.d45fc58b.chunk.js",
     "static/js/3.d45fc58b.chunk.js.map": "/multiverse-avengers/static/js/3.d45fc58b.chunk.js.map",
     "index.html": "/multiverse-avengers/index.html",
-    "static/css/main.2b042cd8.chunk.css.map": "/multiverse-avengers/static/css/main.2b042cd8.chunk.css.map",
-    "static/js/2.765e2114.chunk.js.LICENSE.txt": "/multiverse-avengers/static/js/2.765e2114.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/multiverse-avengers/static/media/space.f0ed3aaa.jpg"
+    "static/css/main.a655fe8e.chunk.css.map": "/multiverse-avengers/static/css/main.a655fe8e.chunk.css.map",
+    "static/js/2.682c965e.chunk.js.LICENSE.txt": "/multiverse-avengers/static/js/2.682c965e.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/multiverse-avengers/static/media/villains.4a04a5dd.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.3dba8b20.js",
-    "static/js/2.765e2114.chunk.js",
-    "static/css/main.2b042cd8.chunk.css",
-    "static/js/main.6abdf7f3.chunk.js"
+    "static/js/2.682c965e.chunk.js",
+    "static/css/main.a655fe8e.chunk.css",
+    "static/js/main.65301469.chunk.js"
   ]
 }
