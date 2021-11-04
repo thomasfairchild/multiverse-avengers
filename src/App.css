@@ -78,7 +78,7 @@ img {
   background-image: url(/src/images/disclaimer.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 35% 45%;
+  background-size: 37% 48%;
   max-width: 100%;
   padding: 290px;
   border-radius: 35%;
@@ -90,7 +90,7 @@ img {
 }
 
 .villains {
-  background-image: url(/src/images/villains.jpeg);
+  background-image: url(/src/images/villains.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -126,9 +126,10 @@ img {
 /* Mobile */
 
 @media only screen and (max-width: 480px) {
-/* .TheFoot {
+
+  .TheFoot {
     display: none;
-} */
+}
   .header {
   display: grid;
   grid-column: 1;
@@ -168,7 +169,9 @@ button {
 }
 
 .villains {
-  height: auto;
-  width: auto;
+  display: grid;
+  grid-column: 1;
+  grid-row: 3;
+  height: 70%;
 }
 }

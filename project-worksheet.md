@@ -30,6 +30,13 @@ be able to select characters and add them to your team.
 - CSS has begun.
 - Successfully learned how to deploy React App onto GitHub Pages.
 
+November 4th:
+- Last day!
+- Made dozens of revisions (image sizes, positions, etc.)
+- Configured the Media settings.
+- Worked on a big Photoshop file.
+- There are a few hiccups: Some files refuse to shrink/move even if programmed to do so (e.g., on Mobile Media settings, the disclaimer at the bottom isn't always responding to the resolutions of the page.)
+
 
 ## Project Links
 
@@ -111,23 +118,17 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - | Working with API | H | 4hrs |  |
 - | App | H | 3hrs |  |
 - | Header | H | 1hr |  |
-- | CSS | H | 3hrs |  |
+- | CSS | H | 3hrs | 3hrs |
 - | Search | H | 1hr |  |
 - | Team | H | 2hrs |  | 
 - | Roster | H | 2hrs |  |
-- | Mission | H | 1hr |  |
-- | MissionData | H | 1hr |  |
-- | Face-Off | H | 1hr |  |
-- | FaceoffData | H | 1hr |  |
-- | After Effects/Photoshop | H | 1hr |  |
+- | After Effects/Photoshop | H | 1hr | 3hrs |
 - | Total | H | 25 hrs|  |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and their role in the project such as Axios, ReactStrap, D3, etc. 
 
  If time permits, I'll use Adobe After Effects/Photoshop to whip up original banner(s).
-
- When I learn more, I might use Bootstrap.
 
  ## Media Settings
 
@@ -139,10 +140,30 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Code Snippet
 
-Work in progress.
-
+Making function that allows users to search characters, add and/or remove them from their team.
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+function handleChange (e) {
+        const searchTerm = e.target.value;
+        
+        setSearchText(searchTerm);
+        if (searchTerm.length === 0) {
+          setSuperheroData([]);
+        }
+        if (searchTerm.length > 3) {
+          findHero();
+        }
+    }
+
+    const addHeroToTeam = (id) => {
+      const hero = heroList.find(ultra => ultra.id === id)
+      setTeamList([...teamList, hero])
+    }
+
+    const removeHeroFromTeam = (id) => {
+      const newTeamList = teamList.filter(ultra => ultra.id !== id)
+
+      setTeamList(newTeamList)
+    }
+
+
 ```
