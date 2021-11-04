@@ -90,6 +90,10 @@ img {
 }
 
 .villains {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-end;
   background-image: url(/src/images/villains.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -170,7 +174,7 @@ button {
 
 .villains {
   display: grid;
-  grid-column: 1;
+  grid-column: 1/4;
   grid-row: 3;
   height: 70%;
 }

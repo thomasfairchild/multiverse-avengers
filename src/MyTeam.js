@@ -41,7 +41,7 @@ console.log(props.team)
             </br>
             <div className="container">
                     <div className="overlay">
-                    <div className="villains"></div>    
+                    <div className="villains"></div>
                     </div>   
             </div>
             <br>
