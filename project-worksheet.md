@@ -114,16 +114,16 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-- | Adding Form | H | 4hrs |  |
-- | Working with API | H | 4hrs |  |
-- | App | H | 3hrs |  |
-- | Header | H | 1hr |  |
+- | Adding Form | H | 4hrs | 7hrs |
+- | Working with API | H | 4hrs | 4hrs |
+- | App | H | 3hrs | 8hr |
+- | Header | H | 1hr | 1hr |
 - | CSS | H | 3hrs | 3hrs |
-- | Search | H | 1hr |  |
-- | Team | H | 2hrs |  | 
-- | Roster | H | 2hrs |  |
+- | Search | H | 1hr | 3hrs |
+- | Team | H | 2hrs | 6hrs | 
+- | Roster | H | 2hrs | 4hrs |
 - | After Effects/Photoshop | H | 1hr | 3hrs |
-- | Total | H | 25 hrs|  |
+- | Total | H | 25 hrs| 39 hrs |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and their role in the project such as Axios, ReactStrap, D3, etc. 
