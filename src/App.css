@@ -1,3 +1,5 @@
+
+
 .App {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -42,7 +44,7 @@ a {
 
 button {
   font-size: 25px;
-  text-shadow: 2px 2px 5px black;
+  /* text-shadow: 2px 2px 5px black; */
 }
 
 img {
@@ -54,4 +56,15 @@ img {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+}
+
+.TheFoot {
+  /* background-image: url(/src/images/heroes.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  max-width: 100%; */
+  margin: 7px;
+  padding: 300px;
 }

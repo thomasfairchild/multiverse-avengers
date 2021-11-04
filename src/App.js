@@ -7,6 +7,7 @@ import { Link, Route } from "react-router-dom";
 import Header from './Header'
 import Mission from './Mission';
 import './index.css';
+import Footer from './Footer';
 
 
 function App() {
@@ -94,6 +95,11 @@ console.log(heroList)
       <Route exact path="/MyTeam.js" component={MyTeam}>
       <MyTeam team={teamList} removeHeroFromTeam={removeHeroFromTeam}/>
       </Route>
+      <br>
+      </br>
+      
+      <div className="TheFoot">
+      </div>
     </div>
   );
 }

@@ -89,7 +89,7 @@ const HeroList = (props) => {
         
     )
       }
-    }): <div>Sorry, it appears that character is missing in action!</div>}
+    }): <div><h2>Sorry, it appears that character is missing in action!</h2></div>}
   </>
   )
 }
