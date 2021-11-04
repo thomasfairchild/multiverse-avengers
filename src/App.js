@@ -68,11 +68,11 @@ function handleChange (e) {
 
 console.log(heroList)
   return (
+    <div className="background">
     <div className="App">
       <div className="header"></div>
       <br>
       </br>
-      {/* <h1>MULTIVERSE AVENGERS</h1> */}
       <div className="nav-bar">
       <Link to="/"><h2>HOME</h2></Link>
       <Link to="./MyTeam.js"><h2>MY TEAM</h2></Link>
@@ -81,14 +81,17 @@ console.log(heroList)
       </br>
       <br>
       </br>
-      <h2>Call forth your warrior and they will appear, ready for battle!</h2>
       <Route exact path="/">
+      <h2>Call forth your warrior and they will appear, ready for battle!</h2>  
       <SearchPage searchText={searchText} updateInput={updateInput} handleChange={handleChange}/>
       <br>
       </br>
-        
-        <br>
-        </br>
+      <br>
+      </br>
+      <br>
+      </br>
+      <br>
+      </br>
         <HeroList heroList={heroList} addHeroToTeam={addHeroToTeam} />
        </Route> 
 
@@ -97,15 +100,21 @@ console.log(heroList)
       </Route>
       <br>
       </br>
-      
+      <br>
+      </br>
+      <br>
+      </br>
+      <br>
+      </br>
+      <br>
+      </br>
+      <br>
+      </br>
       <div className="TheFoot">
       </div>
     </div>
+    </div>
   );
 }
-
-// We need: App <==== Header <==== Nav <===== Search, AllHeroes (the roster), 
-// Team <==== Mission (<== MissionData) and Face-Off (<=== FaceOffData)
-// 10 Components
 
 export default App;

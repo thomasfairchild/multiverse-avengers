@@ -28,7 +28,7 @@ console.log(props.team)
             </br>
             <br>
             </br>
-            <h2>ACTIVATE MISSION</h2>
+            {/* <h2>ACTIVATE MISSION</h2> */}
 
         </div>
     )
