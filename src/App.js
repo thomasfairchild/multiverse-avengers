@@ -4,8 +4,6 @@ import React, { useState } from 'react';
 import HeroList from './HeroList';
 import MyTeam from './MyTeam';
 import { Link, Route } from "react-router-dom";
-import Header from './Header'
-import Mission from './Mission';
 import './index.css';
 
 
@@ -51,10 +49,6 @@ function handleChange (e) {
 
     const addHeroToTeam = (id) => {
       const hero = heroList.find(ultra => ultra.id === id)
-      if(teamList.length === 5){
-  
-      }
-  
       setTeamList([...teamList, hero])
     }
 
@@ -72,6 +66,9 @@ console.log(heroList)
       <div className="header"></div>
       <br>
       </br>
+      <div className="avengers">
+      <h1>MULTIVERSE AVENGERS</h1>
+      </div>
       <div className="nav-bar">
       <Link to="/"><h2>HOME</h2></Link>
       <Link to="./MyTeam.js"><h2>MY TEAM</h2></Link>
@@ -81,36 +78,20 @@ console.log(heroList)
       <br>
       </br>
       <Route exact path="/">
-      <h2>Call forth your warrior and they will appear, ready for battle!</h2>  
-      <SearchPage searchText={searchText} updateInput={updateInput} handleChange={handleChange}/>
-      <br>
-      </br>
-      <br>
-      </br>
-      <br>
-      </br>
-      <br>
-      </br>
+        <div className="HeroSignal">
+        <h2>Call forth your warrior and they will appear, ready for battle!</h2>  
+          <SearchPage searchText={searchText} updateInput={updateInput} handleChange={handleChange}/>
+        </div>
+        <br>
+        </br>
+        <br>
+        </br>
         <HeroList heroList={heroList} addHeroToTeam={addHeroToTeam} />
-       </Route> 
-
+      </Route>
       <Route exact path="/MyTeam.js" component={MyTeam}>
       <MyTeam team={teamList} removeHeroFromTeam={removeHeroFromTeam}/>
       </Route>
-      <br>
-      </br>
-      <br>
-      </br>
-      <br>
-      </br>
-      <br>
-      </br>
-      <br>
-      </br>
-      <br>
-      </br>
-      <div className="TheFoot">
-      </div>
+      <div className="TheFoot"></div>
     </div>
     </div>
   );

@@ -17,7 +17,7 @@ const HeroList = (props) => {
 
 
     return (
-          <div >
+          <div>
             <br>
             </br>
         <div className="profile">
@@ -74,7 +74,7 @@ const HeroList = (props) => {
           <br>
           </br>
           <div className="button">
-            <button onClick={() => props.addHeroToTeam(data.id)}>Add to Team</button>
+            <button onClick={() => props.addHeroToTeam(data.id)}>ADD TO TEAM</button>
           </div>
           <br>
           </br>
@@ -84,7 +84,6 @@ const HeroList = (props) => {
           </br>
           <br>
           </br>
-          <Link to="./MyTeam.js"><h1>GO TO MY TEAM</h1></Link>
           </div>
         
     )
