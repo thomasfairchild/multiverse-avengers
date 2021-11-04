@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import missionData from './missionData';
+import Footer from './Footer';
+import { Link, Route } from "react-router-dom";
 
 function MyTeam(props) {
 
@@ -18,17 +18,25 @@ console.log(props.team)
     return (
         <div className="TheTeam">
             <h1>MY TEAM</h1>
-            <p>Assemble!</p>
             <br>
             </br>
         <div className="HeroSelect">
             {props.team.length > 0 ? myTeamHtml:null}
-        </div>    
+        </div>
             <br>
             </br>
             <br>
             </br>
-            {/* <h2>ACTIVATE MISSION</h2> */}
+            <br>
+            </br>
+            <br>
+            </br>
+            <h1>NOW THAT YOUR TEAM HAS BEEN ASSEMBLED,
+
+                ARE YOU READY TO FACE YOUR GREATEST CHALLENGE?
+            </h1>
+            
+            <Link to="./Footer.js"><button onClick={() => alert('NEW CHALLENGERS HAVE ARRIVED')}>FIGHT!</button> </Link>
 
         </div>
     )

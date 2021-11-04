@@ -7,7 +7,6 @@ import { Link, Route } from "react-router-dom";
 import Header from './Header'
 import Mission from './Mission';
 import './index.css';
-import Footer from './Footer';
 
 
 function App() {
