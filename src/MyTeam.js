@@ -20,7 +20,11 @@ console.log(props.team)
             <p>Assemble!</p>
             <br>
             </br>
+        <div className="HeroSelect">
             {props.team.length > 0 ? myTeamHtml:null}
+        </div>    
+            <br>
+            </br>
             <br>
             </br>
             <h2>ACTIVATE MISSION</h2>

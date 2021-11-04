@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MyTeam from './MyTeam';
+import { Link } from 'react-router-dom';
 
 
 const HeroList = (props) => {
@@ -75,11 +75,16 @@ const HeroList = (props) => {
           </br>
           <div className="button">
             <button onClick={() => props.addHeroToTeam(data.id)}>Add to Team</button>
-          <br>
-          </br>
-          <br>
-          </br>
           </div>
+          <br>
+          </br>
+          <br>
+          </br>
+          <br>
+          </br>
+          <br>
+          </br>
+          <Link to="./MyTeam.js">GO TO MY TEAM</Link>
           </div>
         
     )
