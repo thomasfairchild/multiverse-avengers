@@ -84,7 +84,7 @@ const HeroList = (props) => {
           </br>
           <br>
           </br>
-          <Link to="./MyTeam.js">GO TO MY TEAM</Link>
+          <Link to="./MyTeam.js"><h1>GO TO MY TEAM</h1></Link>
           </div>
         
     )

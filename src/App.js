@@ -6,6 +6,7 @@ import MyTeam from './MyTeam';
 import { Link, Route } from "react-router-dom";
 import Header from './Header'
 import Mission from './Mission';
+import './index.css';
 
 
 function App() {
@@ -67,18 +68,24 @@ function handleChange (e) {
 console.log(heroList)
   return (
     <div className="App">
-      <h1>Multiverse Avengers</h1>
+      <div className="header"></div>
+      <br>
+      </br>
+      {/* <h1>MULTIVERSE AVENGERS</h1> */}
       <div className="nav-bar">
-        <Link to="/">HOME</Link>
-        <Link to="./MyTeam.js">MY TEAM</Link>
+      <Link to="/"><h2>HOME</h2></Link>
+      <Link to="./MyTeam.js"><h2>MY TEAM</h2></Link>
       </div>
       <br>
       </br>
+      <br>
+      </br>
+      <h2>Call forth your warrior and they will appear, ready for battle!</h2>
       <Route exact path="/">
       <SearchPage searchText={searchText} updateInput={updateInput} handleChange={handleChange}/>
       <br>
       </br>
-        <h3>Call forth your warrior and they will appear, ready for battle!</h3>
+        
         <br>
         </br>
         <HeroList heroList={heroList} addHeroToTeam={addHeroToTeam} />

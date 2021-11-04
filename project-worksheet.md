@@ -25,6 +25,10 @@ November 2nd:
 November 3rd:
 - The onClick function isn't working. Today's goal is to solve it in order to
 be able to select characters and add them to your team.
+- Thanks to incredible help from General Assembly's staff, the problem has been solved.
+- I've begun creating a mission database that will consist of challenges for teams.
+- CSS has begun.
+- Successfully learned how to deploy React App onto GitHub Pages.
 
 
 ## Project Links

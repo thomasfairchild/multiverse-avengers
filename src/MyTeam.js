@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import missionData from './missionData';
 
 function MyTeam(props) {
 
@@ -28,6 +29,7 @@ console.log(props.team)
             <br>
             </br>
             <h2>ACTIVATE MISSION</h2>
+
         </div>
     )
 }
