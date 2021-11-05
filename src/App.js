@@ -5,6 +5,7 @@ import HeroList from './HeroList';
 import MyTeam from './MyTeam';
 import { Link, Route } from "react-router-dom";
 import './index.css';
+import Header from './Header';
 
 
 function App() {
@@ -63,21 +64,10 @@ console.log(heroList)
   return (
     <div className="background">
     <div className="App">
-      <div className="header"></div>
-      <br>
-      </br>
-      <div className="avengers">
-      <h1>MULTIVERSE AVENGERS</h1>
-      </div>
-      <div className="nav-bar">
-      <Link to="/"><h2>HOME</h2></Link>
-      <Link to="./MyTeam.js"><h2>MY TEAM</h2></Link>
-      </div>
-      <br>
-      </br>
-      <br>
-      </br>
+      <Header/>
+
       <Route exact path="/">
+      
         <div className="HeroSignal">
         <h2>Call forth your warrior and they will appear, ready for battle!</h2>  
           <SearchPage searchText={searchText} updateInput={updateInput} handleChange={handleChange}/>
@@ -88,6 +78,7 @@ console.log(heroList)
         </br>
         <HeroList heroList={heroList} addHeroToTeam={addHeroToTeam} />
       </Route>
+
       <Route exact path="/MyTeam.js" component={MyTeam}>
       <MyTeam team={teamList} removeHeroFromTeam={removeHeroFromTeam}/>
       </Route>

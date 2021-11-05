@@ -1,8 +1,18 @@
+import { Link } from 'react-router-dom';
+
 function Header () {
 
 
 return (
-    <h1>Multiverse Avengers</h1>
+    <>
+    <div className="header"></div><br>
+    </br><div className="avengers">
+            <h1>MULTIVERSE AVENGERS</h1>
+        </div><div className="nav-bar">
+            <Link to="/"><h2>HOME</h2></Link>
+            <Link to="./MyTeam.js"><h2>MY TEAM</h2></Link>
+        </div>
+        </>
 )
 }
 export default Header

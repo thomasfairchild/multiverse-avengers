@@ -33,6 +33,9 @@ console.log(props.team)
             <h1>CLICK ON THE BUTTON BELOW...</h1>
             <br>
             </br>
+            <h1>TO FACE YOUR GREATEST CHALLENGE!</h1>
+            <br>
+            </br>
             <br>
             </br>
             <div className="container">
@@ -47,7 +50,7 @@ console.log(props.team)
             </div>
             <br>
             </br>
-            <h1>TO FACE YOUR GREATEST CHALLENGE!</h1>
+            
             <br>
             </br>
             
