@@ -50,10 +50,10 @@ console.log(props.team)
             </div>
             <br>
             </br>
-            
             <br>
             </br>
-            
+            <br>
+            </br>
         </div>
     )
 }

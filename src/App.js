@@ -6,6 +6,7 @@ import MyTeam from './MyTeam';
 import { Link, Route } from "react-router-dom";
 import './index.css';
 import Header from './Header';
+import { Switch } from 'react-router';
 
 
 function App() {
@@ -65,7 +66,8 @@ console.log(heroList)
     <div className="background">
     <div className="App">
       <Header/>
-
+<main>
+  <Switch>
       <Route exact path="/" component={Header}>
       
         <div className="HeroSignal">
@@ -82,7 +84,10 @@ console.log(heroList)
       <Route exact path="/MyTeam.js" component={MyTeam}>
       <MyTeam team={teamList} removeHeroFromTeam={removeHeroFromTeam}/>
       </Route>
-      <div className="TheFoot"></div>
+      
+    </Switch>     
+    </main> 
+    <div className="TheFoot"></div> 
     </div>
     </div>
   );
