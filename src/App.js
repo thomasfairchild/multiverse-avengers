@@ -66,7 +66,7 @@ console.log(heroList)
     <div className="App">
       <Header/>
 
-      <Route exact path="/">
+      <Route exact path="/" component={Header}>
       
         <div className="HeroSignal">
         <h2>Call forth your warrior and they will appear, ready for battle!</h2>  
