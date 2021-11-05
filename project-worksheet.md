@@ -1,3 +1,7 @@
+# The Project
+
+- [https://thomasfairchild.github.io/multiverse-avengers/#/]
+
 # Project Overview
 
 October 29th: Project was approved.
@@ -36,6 +40,7 @@ November 4th:
 - Configured the Media settings.
 - Worked on a big Photoshop file.
 - There are a few hiccups: Some files refuse to shrink/move even if programmed to do so (e.g., on Mobile Media settings, the disclaimer at the bottom isn't always responding to the resolutions of the page.)
+- There is a bug where after deploying the npm to GitHub Pages, the NavBar w/ its Link 'buttons' are invisible--but the links, once you find them and click on them, still function.
 
 
 ## Project Links

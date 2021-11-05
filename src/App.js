@@ -91,7 +91,6 @@ console.log(heroList)
       <Route exact path="/MyTeam.js" component={MyTeam}>
       <MyTeam team={teamList} removeHeroFromTeam={removeHeroFromTeam}/>
       </Route>
-      
       <div className="TheFoot"></div>
     </div>
     </div>

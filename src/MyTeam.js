@@ -24,10 +24,6 @@ console.log(props.team)
             </br>
             <br>
             </br>
-            <br>
-            </br>
-            <br>
-            </br>
             <h1>ONCE YOUR TEAM HAS BEEN ASSEMBLED...</h1>
             <br>
             </br>
