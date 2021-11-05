@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/multiverse-avengers/static/css/main.eb85129f.chunk.css",
-    "main.js": "/multiverse-avengers/static/js/main.a6ffadc0.chunk.js",
-    "main.js.map": "/multiverse-avengers/static/js/main.a6ffadc0.chunk.js.map",
+    "main.css": "/multiverse-avengers/static/css/main.1face1b7.chunk.css",
+    "main.js": "/multiverse-avengers/static/js/main.a73e5e70.chunk.js",
+    "main.js.map": "/multiverse-avengers/static/js/main.a73e5e70.chunk.js.map",
     "runtime-main.js": "/multiverse-avengers/static/js/runtime-main.3dba8b20.js",
     "runtime-main.js.map": "/multiverse-avengers/static/js/runtime-main.3dba8b20.js.map",
     "static/js/2.63a3f496.chunk.js": "/multiverse-avengers/static/js/2.63a3f496.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.d45fc58b.chunk.js": "/multiverse-avengers/static/js/3.d45fc58b.chunk.js",
     "static/js/3.d45fc58b.chunk.js.map": "/multiverse-avengers/static/js/3.d45fc58b.chunk.js.map",
     "index.html": "/multiverse-avengers/index.html",
-    "static/css/main.eb85129f.chunk.css.map": "/multiverse-avengers/static/css/main.eb85129f.chunk.css.map",
+    "static/css/main.1face1b7.chunk.css.map": "/multiverse-avengers/static/css/main.1face1b7.chunk.css.map",
     "static/js/2.63a3f496.chunk.js.LICENSE.txt": "/multiverse-avengers/static/js/2.63a3f496.chunk.js.LICENSE.txt",
     "static/media/App.css": "/multiverse-avengers/static/media/villains.4219b839.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3dba8b20.js",
     "static/js/2.63a3f496.chunk.js",
-    "static/css/main.eb85129f.chunk.css",
-    "static/js/main.a6ffadc0.chunk.js"
+    "static/css/main.1face1b7.chunk.css",
+    "static/js/main.a73e5e70.chunk.js"
   ]
 }
